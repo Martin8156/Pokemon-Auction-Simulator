@@ -1,4 +1,8 @@
-package server;
+package src.server;
+
+import src.sharedClass.AuctionItem;
+
+import java.util.List;
 
 class Message {
   String type;
@@ -17,5 +21,12 @@ class Message {
     this.input = input;
     this.number = number;
     System.out.println("server-side message created");
+  }
+
+  // For auction data
+  protected Message (List<AuctionItem> auctionItems) {
+    Message message = new Message();
+    System.out.println("server-side message created");
+
   }
 }

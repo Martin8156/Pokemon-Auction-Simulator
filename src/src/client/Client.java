@@ -1,4 +1,4 @@
-package client;
+package src.client;
 
 import java.util.Scanner;
 import java.io.BufferedReader;
@@ -36,7 +36,7 @@ class Client {
         String input;
         try {
           while ((input = fromServer.readLine()) != null) {
-            System.out.println("From server: " + input);
+            System.out.println("From server: " + input); // getting null string here
             processRequest(input);
           }
         } catch (Exception e) {
@@ -64,7 +64,7 @@ class Client {
   }
 
   protected void processRequest(String input) {
-    return;
+    System.out.println("message from server has been received... TODO: action to complete upon message receive");
   }
 
   protected void sendToServer(String string) {
@@ -72,5 +72,6 @@ class Client {
     toServer.println(string);
     toServer.flush();
   }
+
 
 }
