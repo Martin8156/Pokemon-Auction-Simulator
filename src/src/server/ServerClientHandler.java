@@ -1,6 +1,9 @@
 package src.server;
 
 
+import javafx.fxml.FXML;
+import javafx.scene.layout.GridPane;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
@@ -9,14 +12,17 @@ import java.net.Socket;
 import java.util.Observer;
 import java.util.Observable;
 
-class ClientHandler implements Runnable, Observer { 
+class ServerClientHandler implements Runnable, Observer {
 
   private Server server;
   private Socket clientSocket;
   private BufferedReader fromClient;
   private PrintWriter toClient;
 
-  protected ClientHandler(Server server, Socket clientSocket) {
+  @FXML
+  private GridPane displayPane;
+
+  protected ServerClientHandler(Server server, Socket clientSocket) {
     this.server = server;
     this.clientSocket = clientSocket;
     try {
@@ -27,18 +33,6 @@ class ClientHandler implements Runnable, Observer {
     }
 
   }
-
-  protected void sendToClient(String string) {
-    System.out.println("Sending to client: " + string);
-    toClient.println(string);
-    toClient.flush();
-  }
-  private void sendInitialItemData() {
-    // Get the initial item data from the server
-    String itemData = server.getItemData();
-    sendToClient(itemData);
-  }
-
   @Override
   public void run() {
     String input;
@@ -55,5 +49,12 @@ class ClientHandler implements Runnable, Observer {
   @Override
   public void update(Observable o, Object arg) {
     this.sendToClient((String) arg);
+  } // override method of parent class so that updated info from server is sent to all clients
+
+  protected void sendToClient(String string) {
+    System.out.println("Sending to client: " + string);
+    toClient.println(string);
+    toClient.flush();
   }
+
 }

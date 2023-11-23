@@ -10,5 +10,17 @@
   {
     "name": "Mewtwo",
     "minimumBid": 100.0
+  },
+  {
+    "name": "Cyndaquil",
+    "minimumBid": 100.0
+  },
+  {
+    "name": "Shaymin",
+    "minimumBid": 100.0
+  },
+  {
+    "name": "Darkrai",
+    "minimumBid": 100.0
   }
 ]

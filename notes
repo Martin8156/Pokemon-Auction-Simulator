@@ -1,7 +1,0 @@
-Questions to ask
-1) I am not sure how I would send data from Server to the AuctionClient GUI
-2) Should there by like a client handler between the gui and the server, similar to how there is a connection with the client and server
-3) My system is supposed to handle multiple clients right? Am I supposed to create the GUI for multiple customers? Currently I am creating
-    a) server
-    b) auctionclient
-    c) client thread

@@ -35,15 +35,18 @@ class Server extends Observable {
     @SuppressWarnings("resource")
     ServerSocket serverSock = new ServerSocket(4242);
     while (true) {
-      Socket clientSocket = serverSock.accept();
+      Socket clientSocket = serverSock.accept(); // continusously establish connections between client and server
       System.out.println("Connecting to... " + clientSocket);
 
-      ClientHandler handler = new ClientHandler(this, clientSocket);
+      ServerClientHandler handler = new ServerClientHandler(this, clientSocket);
       this.addObserver(handler); // adds to a list inside of Observable parent class
 
       Thread t = new Thread(handler);
       t.start();
 
+
+
+      // unsure about code below
       Gson gson = new Gson();
       String itemData = gson.toJson(auctionItems, new TypeToken<List<AuctionItem>>() {}.getType());
       handler.sendToClient(itemData); // send most recent server data to client upon creation
@@ -52,36 +55,10 @@ class Server extends Observable {
 
   protected void processRequest(String input) { // need to change this in relation to project requirements
     // TODO:
-        String output = "Error";
-        Gson gson = new Gson();
-        Message message = gson.fromJson(input, Message.class);
-        try {
-          String temp = "";
-          switch (message.type) {
-            case "upper":
-              temp = message.input.toUpperCase();
-              break;
-            case "lower":
-              temp = message.input.toLowerCase();
-              break;
-            case "strip":
-              temp = message.input.replace(" ", "");
-              break;
-          }
-          output = "";
-          for (int i = 0; i < message.number; i++) {
-            output += temp;
-            output += " ";
-//          }
 
-
-     // TODO: ^^
-    // Send item data to the client
-
-          }
-
+    try {
       this.setChanged();
-      this.notifyObservers(output); // updates all clienthandlers of the change made on the server
+      this.notifyObservers(); // updates all clienthandlers of the change made on the server
     } catch (Exception e) {
       e.printStackTrace();
     }
