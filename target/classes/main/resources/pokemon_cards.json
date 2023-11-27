@@ -1,0 +1,56 @@
+[
+  {
+    "id": "5f9b7e49ae5008f2cfd7ef30",
+    "name": "Gengar",
+    "description": "Ghost/Poison-type Pokémon. Moveset: Shadow Ball, Sludge Bomb, Dream Eater, Hypnosis",
+    "timeRemaining": 5,
+    "minimumBid": 50.0,
+    "buyNowPrice": 500.0,
+    "bidOpen": true
+  },
+  {
+    "id": "5f9b7e49ae5008f2cfd7ef31",
+    "name": "Lucario",
+    "description": "Fighting/Steel-type Pokémon. Moveset: Aura Sphere, Close Combat, Flash Cannon, Swords Dance",
+    "timeRemaining": 10,
+    "minimumBid": 50.0,
+    "buyNowPrice": 500.0,
+    "bidOpen": true
+  },
+  {
+    "id": "5f9b7e49ae5008f2cfd7ef32",
+    "name": "Mewtwo",
+    "description": "LEGENDARY Psychic-type Pokémon. Moveset: Psychic, Shadow Ball, Ice Beam, Thunderbolt",
+    "timeRemaining": 8,
+    "minimumBid": 100.0,
+    "buyNowPrice": 1000.0,
+    "bidOpen": true
+  },
+  {
+    "id": "5f9b7e49ae5008f2cfd7ef33",
+    "name": "Cyndaquil",
+    "description": "Fire-type Pokémon. Moveset: Flamethrower, Swift, Quick Attack, Flame Wheel",
+    "timeRemaining": 2,
+    "minimumBid": 25.0,
+    "buyNowPrice": 250.0,
+    "bidOpen": true
+  },
+  {
+    "id": "5f9b7e49ae5008f2cfd7ef34",
+    "name": "Shaymin",
+    "description": "Grass/Flying-type Pokemon. Moveset: Seed Flare, Air Slash, Earth Power, Synthesis",
+    "timeRemaining": 3,
+    "minimumBid": 100.0,
+    "buyNowPrice": 1000.0,
+    "bidOpen": true
+  },
+  {
+    "id": "5f9b7e49ae5008f2cfd7ef35",
+    "name": "Darkrai",
+    "description": "LEGENDARY Dark-type Pokémon. Moveset: Dark Pulse, Focus Blast, Ice Beam, Nasty Plot",
+    "timeRemaining": 5,
+    "minimumBid": 100.0,
+    "buyNowPrice": 1000.0,
+    "bidOpen": true
+  }
+]
