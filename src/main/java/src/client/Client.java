@@ -82,7 +82,6 @@ public class Client extends Application {
 
   public void setUpNetworking() throws Exception {
     try {
-      Thread.sleep(10000);
       Socket socket = new Socket(host, 4242);
       System.out.println("Connecting to... " + socket);
       fromServer = new BufferedReader(new InputStreamReader(socket.getInputStream()));
