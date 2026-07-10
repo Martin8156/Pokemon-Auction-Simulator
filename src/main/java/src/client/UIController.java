@@ -128,7 +128,7 @@ public class UIController implements Initializable {
             // hardcoded switch block
             switch (pokemon.getName()) {
                 case "Gengar":
-                    image = new Image(new FileInputStream("/Users/brian/IdeaProjects/fa-23-final-project-Martin8156/src/main/resources/Gengar.png"));
+                    image = new Image(new FileInputStream(" add local path "));
                     imageView = new ImageView(image);
                     imageView.setX(50);
                     imageView.setY(25);
@@ -137,7 +137,7 @@ public class UIController implements Initializable {
                     imageView.setPreserveRatio(true);
                     break;
                 case "Lucario":
-                    image = new Image(new FileInputStream("/Users/brian/IdeaProjects/fa-23-final-project-Martin8156/src/main/resources/Lucario.png"));
+                    image = new Image(new FileInputStream(" add local path "));
                     imageView = new ImageView(image);
                     imageView.setX(50);
                     imageView.setY(25);
@@ -146,7 +146,7 @@ public class UIController implements Initializable {
                     imageView.setPreserveRatio(true);
                     break;
                 case "Mewtwo":
-                    image = new Image(new FileInputStream("/Users/brian/IdeaProjects/fa-23-final-project-Martin8156/src/main/resources/Mewtwo.png"));
+                    image = new Image(new FileInputStream(" add local path "));
                     imageView = new ImageView(image);
                     imageView.setX(50);
                     imageView.setY(25);
@@ -155,7 +155,7 @@ public class UIController implements Initializable {
                     imageView.setPreserveRatio(true);
                     break;
                 case "Shaymin":
-                    image = new Image(new FileInputStream("/Users/brian/IdeaProjects/fa-23-final-project-Martin8156/src/main/resources/Shaymin.png"));
+                    image = new Image(new FileInputStream(" add local path "));
                     imageView = new ImageView(image);
                     imageView.setX(50);
                     imageView.setY(25);
@@ -164,7 +164,7 @@ public class UIController implements Initializable {
                     imageView.setPreserveRatio(true);
                     break;
                 case "Darkrai":
-                    image = new Image(new FileInputStream("/Users/brian/IdeaProjects/fa-23-final-project-Martin8156/src/main/resources/Darkrai.png"));
+                    image = new Image(new FileInputStream(" add local path "));
                     imageView = new ImageView(image);
                     imageView.setX(50);
                     imageView.setY(25);
@@ -173,7 +173,7 @@ public class UIController implements Initializable {
                     imageView.setPreserveRatio(true);
                     break;
                 case "Cyndaquil":
-                    image = new Image(new FileInputStream("/Users/brian/IdeaProjects/fa-23-final-project-Martin8156/src/main/resources/Cyndaquil.png"));
+                    image = new Image(new FileInputStream(" add local path "));
                     imageView = new ImageView(image);
                     imageView.setX(50);
                     imageView.setY(25);
@@ -279,7 +279,7 @@ public class UIController implements Initializable {
             // hardcoded switch block
             switch (pokemon.getName()) {
                 case "Gengar":
-                    image = new Image(new FileInputStream("/Users/brian/IdeaProjects/fa-23-final-project-Martin8156/src/main/resources/Gengar.png"));
+                    image = new Image(new FileInputStream(" add local path "));
                     imageView = new ImageView(image);
                     imageView.setX(50);
                     imageView.setY(25);
@@ -288,7 +288,7 @@ public class UIController implements Initializable {
                     imageView.setPreserveRatio(true);
                     break;
                 case "Lucario":
-                    image = new Image(new FileInputStream("/Users/brian/IdeaProjects/fa-23-final-project-Martin8156/src/main/resources/Lucario.png"));
+                    image = new Image(new FileInputStream(" add local path "));
                     imageView = new ImageView(image);
                     imageView.setX(50);
                     imageView.setY(25);
@@ -297,7 +297,7 @@ public class UIController implements Initializable {
                     imageView.setPreserveRatio(true);
                     break;
                 case "Mewtwo":
-                    image = new Image(new FileInputStream("/Users/brian/IdeaProjects/fa-23-final-project-Martin8156/src/main/resources/Mewtwo.png"));
+                    image = new Image(new FileInputStream(" add local path "));
                     imageView = new ImageView(image);
                     imageView.setX(50);
                     imageView.setY(25);
@@ -306,7 +306,7 @@ public class UIController implements Initializable {
                     imageView.setPreserveRatio(true);
                     break;
                 case "Shaymin":
-                    image = new Image(new FileInputStream("/Users/brian/IdeaProjects/fa-23-final-project-Martin8156/src/main/resources/Shaymin.png"));
+                    image = new Image(new FileInputStream(" add local path "));
                     imageView = new ImageView(image);
                     imageView.setX(50);
                     imageView.setY(25);
@@ -315,7 +315,7 @@ public class UIController implements Initializable {
                     imageView.setPreserveRatio(true);
                     break;
                 case "Darkrai":
-                    image = new Image(new FileInputStream("/Users/brian/IdeaProjects/fa-23-final-project-Martin8156/src/main/resources/Darkrai.png"));
+                    image = new Image(new FileInputStream(" add local path "));
                     imageView = new ImageView(image);
                     imageView.setX(50);
                     imageView.setY(25);
@@ -324,7 +324,7 @@ public class UIController implements Initializable {
                     imageView.setPreserveRatio(true);
                     break;
                 case "Cyndaquil":
-                    image = new Image(new FileInputStream("/Users/brian/IdeaProjects/fa-23-final-project-Martin8156/src/main/resources/Cyndaquil.png"));
+                    image = new Image(new FileInputStream(" add local path "));
                     imageView = new ImageView(image);
                     imageView.setX(50);
                     imageView.setY(25);
