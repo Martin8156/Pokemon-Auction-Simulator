@@ -45,7 +45,7 @@ class Server extends Observable {
 
 
   public static void main(String[] args) {
-    client = MongoClients.create("mongodb+srv://mbinfante8156:3JFcXb4Y4U9mtVSk@auctionserver.roffrko.mongodb.net/?retryWrites=true&w=majority");
+    client = MongoClients.create(" add here ! ");
     db = client.getDatabase("AuctionServerResources");
     pokemonCol = db.getCollection("Available Pokemon");
     loginCol = db.getCollection("CustomerLoginInfo");
@@ -248,7 +248,7 @@ class Server extends Observable {
 
   private void loadItemData() {
     // Load item data from a JSON file using Gson
-    try (BufferedReader reader = new BufferedReader(new FileReader("/Users/brian/IdeaProjects/fa-23-final-project-Martin8156/src/main/resources/pokemon_cards.json"))) {
+    try (BufferedReader reader = new BufferedReader(new FileReader(" add here ! "))) { // note: JSON files of pokemon pictures were stored locally
       System.out.println("Item Loaded on Server Sucessfully...");
       Gson gson = new Gson();
       auctionItems = gson.fromJson(reader, new TypeToken<List<AuctionItem>>() {}.getType());
